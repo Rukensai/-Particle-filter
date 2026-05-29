@@ -132,7 +132,7 @@ int main()
 
     for (int t = 0; t < STEPS; t++){
         // Истинная траектория
-        true_x += 1.0; 
+        true_x += 1.0; // рандомизировать шаг - true_x += randn(0.8, 1.0); 
         double measurement = true_x + randn(0.0, 1.0); // Датчик врет на 1.0
         
         // Шаги фильтра
